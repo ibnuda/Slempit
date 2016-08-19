@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import com.github.florent37.materialviewpager.header.MaterialViewPagerHeaderDecorator
 
 import me.ijauradunbi.slempit.R
+import me.ijauradunbi.slempit.adapter.SomethingAdapter
 import java.util.*
 
 /**
@@ -18,8 +19,8 @@ import java.util.*
  */
 class PemasukanFragment : Fragment() {
     private var recyclerView: RecyclerView? = null
-    private val adapter: RecyclerView.Adapter<*>? = null
-    private val contentItem = ArrayList<Any>()
+    private var adapter: RecyclerView.Adapter<*>? = null
+    private var contentItems = ArrayList<Any>()
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -38,10 +39,12 @@ class PemasukanFragment : Fragment() {
         recyclerView!!.layoutManager = layoutManager
         recyclerView!!.setHasFixedSize(true)
         recyclerView!!.addItemDecoration(MaterialViewPagerHeaderDecorator())
-        recyclerView!!.adapter = adapter
-        kotlin.run {
+
+        adapter = SomethingAdapter(contentItems)
+        recyclerView!!.adapter = adapter!!
+        run {
             for (i in 0..ITEM_COUNT - 1) {
-                contentItem!!.add(Any())
+                contentItems.add(Any())
             }
             adapter!!.notifyDataSetChanged()
         }

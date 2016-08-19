@@ -1,13 +1,28 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context=".fragments.PengeluaranFragment">
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.florent37.carpaccio.Carpaccio
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/carpaccio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:register="com.github.florent37.materialviewpager.controllers.MaterialViewPagerViewController;">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.RecyclerView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment"/>
+            android:tag="materialColumns(2);materialAdapter(card,R.layout.list_item_card_small);"/>
+</com.github.florent37.carpaccio.Carpaccio>
+        <!--FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     xmlns:tools="http://schemas.android.com/tools"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     tools:context=".fragments.PengeluaranFragment">
 
-</FrameLayout>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/hello_blank_fragment"/>
+
+        </FrameLayout-->

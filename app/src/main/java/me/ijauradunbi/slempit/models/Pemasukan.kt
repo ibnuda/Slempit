@@ -9,5 +9,8 @@ import java.util.*
  */
 
 open class Pemasukan : RealmObject() {
+    open var masuk: Long? = null
+    open var siapa: String? = null
     open var total: Long? = null
+    open var waktu: Date? = null
 }

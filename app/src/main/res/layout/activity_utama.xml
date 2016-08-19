@@ -9,7 +9,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:viewpager_logo="@layout/header"
-            app:viewpager_pagerTitleStrip="@layout/pager_pemasukan"
             app:viewpager_logoMarginTop="100dp"
             app:viewpager_color="@color/colorPrimary"
             app:viewpager_headerHeight="200dp"
@@ -22,9 +21,18 @@
             app:viewpager_headerAdditionalHeight="20dp"
             app:viewpager_displayToolbarWhenSwipe="true"
             app:viewpager_transparentToolbar="false"
-            app:viewpager_animatedHeaderImage="true"
+            app:viewpager_animatedHeaderImage="true" />
+    <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    />
+        <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floating_action_button"
+                android:layout_gravity="bottom|end"
+                android:layout_width="@dimen/fab_size"
+                android:layout_height="@dimen/fab_size" android:padding="30dp" android:paddingRight="30dp"
+                android:paddingBottom="30dp" android:paddingLeft="30dp" android:paddingTop="30dp"/>
+    </android.support.design.widget.CoordinatorLayout>
     <android.support.design.widget.NavigationView
             android:id="@+id/navigation_view"
             android:layout_width="wrap_content"

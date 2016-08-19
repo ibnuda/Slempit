@@ -41,6 +41,7 @@ dependencies {
         transitive = true
     }
     compile 'com.github.ksoichiro:android-observablescrollview:1.6.0'
+    compile 'com.github.florent37:carpaccio:1.0.2.7'
 }
 repositories {
     mavenCentral()
