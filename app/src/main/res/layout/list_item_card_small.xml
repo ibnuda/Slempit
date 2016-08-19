@@ -10,9 +10,39 @@
             app:contentPadding="0dp"
             android:id="@+id/card_view"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/card_margin_vertical"
             android:layout_marginLeft="@dimen/card_margin_horizontal"
             android:layout_marginRight="@dimen/card_margin_horizontal"
-            android:layout_marginTop="@dimen/card_margin_vertical"/>
+            android:layout_marginTop="@dimen/card_margin_vertical">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                    android:id="@+id/text_view_waktu"
+                    android:text="ini waktu"
+                    android:textSize="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/text_view_siapa"
+                    android:text="ini siapa"
+                    android:textSize="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/text_view_masuk"
+                    android:text="ini masuk"
+                    android:textSize="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/text_view_total"
+                    android:text="ini total"
+                    android:textSize="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
 </FrameLayout>

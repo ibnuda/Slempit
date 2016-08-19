@@ -9,7 +9,7 @@ import me.ijauradunbi.slempit.R
 /**
  * Created on 19/08/2016.
  */
-class SomethingAdapter(internal var contents: List<Any>): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+open class SomethingAdapter(internal var contents: List<Any>): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     override fun getItemViewType(position: Int): Int {
         when (position) {
