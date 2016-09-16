@@ -41,8 +41,7 @@ class PengeluaranFragment : Fragment() {
         carpaccio!!.mapList("card", contentItems)
         carpaccio!!.onItemClick("card", object : OnItemClickListener<Any> {
             override fun onItemClick(item: Any?, position: Int, holder: Holder?) = Toast.makeText(activity, "position" + position, Toast.LENGTH_LONG).show()
-            override fun isClickable(item: Any?, position: Int, holder: Holder?): Boolean = false
-
+            override fun isClickable(item: Any?, position: Int, holder: Holder?): Boolean = true
         })
     }
 
